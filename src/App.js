@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Home from './public/Home';
+import Header from './components/header/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [currentPage, setCurrentPage] = useState({});
+	const handleCurrentPage = (page) => setCurrentPage(page);
+
+	return (
+		<Router>
+			<Header />
+			<Routes>
+				<Route
+					path="/"
+					element={<Home handleCurrentPage={handleCurrentPage} />}
+				/>
+				{/* <Route path="/artist" element={<Artist />} /> */}
+				{/* <Route path="/art" element={<Art />} />
+        <Route path="/media" element={<Media />} />
+        <Route path="/contact" element={<Contact />} /> */}
+			</Routes>
+		</Router>
+	);
 }
 
 export default App;
