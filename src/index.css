@@ -2,7 +2,8 @@
 
 :root{
   --header-footer:#d9d9d9;
-  --main-background-color:#aba7a7;
+  /* --main-background-color:#aba7a7; */
+  --main-background-color:black;
   --secondary-background-color:white;
   --main-font-color:black;
   --hover-font-color:black;

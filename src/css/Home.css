@@ -1,4 +1,38 @@
 .home {
-    background-color: var(--main-background-color);
-    height: 100vh;
+	background-color: var(--main-background-color);
+	height: calc(100vh - 127px);
+}
+
+/* .mainImgLayout {
+	margin-top: 60px;
+	width: 100vw;
+	height: 200px;
+	object-fit: contain;
+} */
+.mainImgLayout {
+	margin-top: 55px;
+	width: 100vw;
+	height: 75vh;
+	object-fit: contain;
+}
+.mainImg {
+	height: 100%;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.mainImgContainer {
+    padding-top:60px;
+    height: 60%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.text{
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
+svg .arrows {
+    margin: 0 5%;
 }

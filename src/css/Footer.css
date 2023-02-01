@@ -1,0 +1,17 @@
+footer {
+    display:flex;
+    justify-content: flex-end;
+     margin-right: 5%;
+     align-content: center;
+     padding-top: 10px;
+}
+
+.footerLink {
+    margin-right: 20px;
+}
+.footerLink svg{
+    height:40px;
+}
+.linkedin{
+    margin-right: -5px;
+}
